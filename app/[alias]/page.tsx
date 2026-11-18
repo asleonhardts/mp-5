@@ -1,5 +1,6 @@
 import {redirect, notFound} from "next/navigation";
 import { getDatabase } from "@/lib/mongodb";
+export const dynamic = "force-dynamic";
 
 export default async function RedirectPage({params,}: {
     params: Promise<{alias: string}>;
